@@ -13,7 +13,7 @@ return [
     |
     */
 
-    'default' => env('MAIL_MAILER', 'smtp'),
+    'default' => env('MAIL_MAILER', 'symfony_mailer'), // 'smtp' から 'symfony_mailer' に変更
 
     /*
     |--------------------------------------------------------------------------
@@ -23,10 +23,6 @@ return [
     | Here you may configure all of the mailers used by your application plus
     | their respective settings. Several examples have been configured for
     | you and you are free to add your own as your application requires.
-    |
-    | Laravel supports a variety of mail "transport" drivers to be used while
-    | sending an e-mail. You will specify which one you are using for your
-    | mailers below. You are free to add additional mailers as required.
     |
     | Supported: "smtp", "sendmail", "mailgun", "ses",
     |            "postmark", "log", "array", "failover"
@@ -45,6 +41,16 @@ return [
             'auth_mode' => null,
         ],
 
+        'symfony_mailer' => [ // Symfony Mailer の設定を追加
+            'transport' => 'smtp', // Symfony Mailer も 'smtp' を使用
+            'host' => env('MAIL_HOST'),
+            'port' => env('MAIL_PORT'),
+            'encryption' => env('MAIL_ENCRYPTION'),
+            'username' => env('MAIL_USERNAME'),
+            'password' => env('MAIL_PASSWORD'),
+        ],
+
+        // その他の設定はそのまま
         'ses' => [
             'transport' => 'ses',
         ],
