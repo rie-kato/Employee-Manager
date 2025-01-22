@@ -8,6 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Employee extends Model
 {
     use HasFactory;
+
     // 使用するテーブル
     protected $table = 'employees';
 
@@ -15,5 +16,6 @@ class Employee extends Model
     protected $fillable = [
         'name',
         'department',
+        'age',
     ];
 }

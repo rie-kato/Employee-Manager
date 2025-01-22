@@ -1,0 +1,81 @@
+/* ヘッダーのスタイリング */
+.header {
+    color: #333;
+    background-color: rgb(9, 243, 243);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    /* ヘッダーを画面上部に固定 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    /* 他の要素より上に表示 */
+    /* 高さが設定されていないとコンテンツが隠れるので高さを指定 */
+    height: 60px;
+}
+
+/* ヘッダー内の内容を横並びにする */
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+/* ヘッダーのタイトルスタイル */
+.header__logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    /* 下線を削除 */
+}
+
+/* ナビゲーションバー */
+.header__nav {
+    display: flex;
+    justify-content: flex-end;
+    /* リンクを右寄せ */
+    align-items: center;
+    flex-grow: 1;
+}
+
+/* ナビゲーションリスト */
+.header__nav-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+/* ナビゲーションアイテム */
+.header__nav-item {
+    margin: 0 15px;
+    /* リストアイテムの左右にスペースを追加 */
+}
+
+.header__nav-link {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 5px 10px;
+    /* 内側の余白を追加 */
+    border-radius: 25%;
+    /* 角丸を設定 */
+    transition: background-color 0.3s, color 0.3s;
+    /* ホバー時のアニメーション */
+}
+
+.header__nav-link:hover {
+    color: #fff;
+    /* ホバー時の文字色を変更 */
+    background-color: #289ADC;
+    /* ホバー時の背景色を変更 */
+}
+
+/* ボディコンテンツの調整 */
+body {
+    margin-top: 60px;
+    /* ヘッダーの高さ分だけコンテンツを下げる */
+}

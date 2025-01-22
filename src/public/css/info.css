@@ -1,0 +1,67 @@
+/* ページ全体の中央寄せ */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* コンテンツ全体の幅と中央寄せ */
+section {
+    max-width: 800px;
+    /* コンテンツの最大幅 */
+    width: 100%;
+    text-align: center;
+    /* 中央寄せ */
+    margin: 20px 0;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* タイトルの中央配置 */
+h1 {
+    text-align: center;
+    /* 中央寄せ */
+    font-size: 2rem;
+    /* フォントサイズ */
+    margin: 20px 0;
+    /* 上下の余白を設定 */
+    color: #289adc;
+    /* 色設定 */
+}
+
+/* セクションのサブタイトル */
+section h2 {
+    font-size: 1.8rem;
+    color: #444;
+    border-bottom: 2px solid #289adc;
+    padding-bottom: 5px;
+    margin: 20px 0 10px;
+}
+
+/* リストのスタイル */
+section ul {
+    list-style: none;
+    padding: 0;
+}
+
+section ul li {
+    margin: 10px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* リンクのスタイル */
+a {
+    color: #289adc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

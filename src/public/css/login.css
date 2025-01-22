@@ -1,0 +1,80 @@
+/* .login-form__contentの中央寄せ */
+.login-form__content {
+    display: flex;
+    justify-content: center;
+    /* 横方向中央寄せ */
+    align-items: center;
+    /* 縦方向中央寄せ */
+    height: 100vh;
+    /* ビューポートの高さを設定 */
+    margin: 0;
+    padding: 30px 15px;
+    box-sizing: border-box;
+    min-width: 100%;
+    /* 横幅が狭くなっても中央に寄せる */
+}
+
+/* フォームのスタイル */
+.form {
+    margin: 0;
+    width: 100%;
+    max-width: 400px;
+    /* 最大幅を指定 (画面幅による調整) */
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* フォームのヘッディング */
+.login-form__heading {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* 入力フォームのグループ */
+.form__group {
+    margin-bottom: 15px;
+}
+
+/* グループタイトルの左寄せ */
+.form__group-title {
+    text-align: left;
+}
+
+/* エラーメッセージ */
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+/* テキスト入力欄 */
+.form__input--text input {
+    padding: 10px;
+    width: 100%;
+    height: 40px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    appearance: none;
+}
+
+/* ボタンのスタイル */
+.form__button {
+    margin-top: 20px;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* 登録リンク */
+.register__link {
+    margin-top: 20px;
+    text-align: center;
+}
