@@ -61,8 +61,6 @@
     font-size: 16px;
     padding: 5px 10px;
     /* 内側の余白を追加 */
-    border-radius: 25%;
-    /* 角丸を設定 */
     transition: background-color 0.3s, color 0.3s;
     /* ホバー時のアニメーション */
 }
@@ -70,8 +68,6 @@
 .header__nav-link:hover {
     color: #fff;
     /* ホバー時の文字色を変更 */
-    background-color: #289ADC;
-    /* ホバー時の背景色を変更 */
 }
 
 /* ボディコンテンツの調整 */

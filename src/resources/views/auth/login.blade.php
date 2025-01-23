@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+<link rel="stylesheet" href="{{ asset('css/login.css') }}">
 <div class="login-form__content">
     <div class="form">
         <h2 class="login-form__heading">ログイン</h2>

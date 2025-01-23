@@ -59,19 +59,23 @@ svg.w-5.h-5 {
     border-radius: 4px;
 }
 
+
 .sidebar__search-button {
     display: inline-block;
+    width: 100%;
     padding: 10px 20px;
-    background-color: #289ADC;
-    color: white;
+    background-color: #000;
+    color: #fff;
     text-align: center;
     border: none;
-    border-radius: 4px;
+    border-radius: 3px;
+    font-weight: bold;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .sidebar__search-button:hover {
-    background-color: #1d7cbc;
+    background: #333;
 }
 
 .sidebar__sort-button {

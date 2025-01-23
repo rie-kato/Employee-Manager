@@ -4,7 +4,7 @@ h1 {
     font-size: 2rem;
     margin: 20px 0;
     /* 上下の余白を設定 */
-    color: #289adc;
+    color: #555;
 }
 
 /* フォーム全体のスタイル */
@@ -51,18 +51,23 @@ form textarea {
 
 /* ボタンのスタイル */
 form button {
+    margin-top: 20px;
+    width: 100%;
     display: inline-block;
-    background-color: #289adc;
+    background-color: #000;
     color: #fff;
-    padding: 10px 20px;
-    font-size: 16px;
+    padding: 10px;
+    height: 50px;
+    font-size: 1rem;
     border: none;
-    border-radius: 4px;
+    border-radius: 3px;
+    font-weight: bold;
     cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 form button:hover {
-    background-color: #1e7fbf;
+    background-color: #333;
 }
 
 /* フラッシュメッセージのスタイル */
