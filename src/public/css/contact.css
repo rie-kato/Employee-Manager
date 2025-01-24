@@ -1,7 +1,7 @@
 /* タイトルの中央配置 */
 h1 {
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin: 20px 0;
     /* 上下の余白を設定 */
     color: #555;
@@ -15,7 +15,7 @@ form {
     padding: 20px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -50,7 +50,7 @@ form textarea {
 }
 
 /* ボタンのスタイル */
-form button {
+button[type="submit"]{
     margin-top: 20px;
     width: 100%;
     display: inline-block;

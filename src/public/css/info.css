@@ -1,4 +1,4 @@
-/* ページ全体の中央寄せ */
+/* 全体のスタイル */
 body {
     display: flex;
     flex-direction: column;
@@ -9,42 +9,47 @@ body {
     padding: 0;
 }
 
-/* コンテンツ全体の幅と中央寄せ */
-section {
-    max-width: 800px;
-    /* コンテンツの最大幅 */
+/* セクションを横並びに配置 */
+.info-sections {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
     width: 100%;
-    text-align: center;
-    /* 中央寄せ */
-    margin: 20px 0;
-    padding: 10px;
-    background-color: #ffffff;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    /* 必要に応じて折り返し */
+}
+
+/* 各セクションのデザイン */
+section {
+    flex: 1;
+    min-width: 300px;
+    max-width: 33%;
+    padding: 20px;
+    background: #fff;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
-}
-
-/* タイトルの中央配置 */
-h1 {
     text-align: center;
-    /* 中央寄せ */
-    font-size: 2rem;
-    /* フォントサイズ */
-    margin: 20px 0;
-    /* 上下の余白を設定 */
-    color: #555;
-    /* 色設定 */
 }
 
-/* セクションのサブタイトル */
+/* タイトル */
+h1 {
+    font-size: 2rem;
+    margin: 20px 0;
+    color: #555;
+}
+
+/* サブタイトル */
 section h2 {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     color: #444;
+    margin-bottom: 10px;
     border-bottom: 2px solid #289adc;
     padding-bottom: 5px;
-    margin: 20px 0 10px;
 }
 
-/* リストのスタイル */
+/* リスト */
 section ul {
     list-style: none;
     padding: 0;
@@ -56,12 +61,30 @@ section ul li {
     color: #555;
 }
 
-/* リンクのスタイル */
+/* リンクの中央揃え */
+p {
+
+    text-align: center;
+    /* リンクの親要素を中央揃え */
+    margin-top: 20px;
+    /* 上部に余白を追加 */
+}
+
 a {
+    display: inline-block;
+    /* ブロック化して中央揃え調整 */
     color: #289adc;
     text-decoration: none;
+    font-size: 1rem;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+.info-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 1em;
 }
